@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
+  s.add_dependency 'orm_adapter', '>= 0.0.5'
   s.add_dependency 'mongo_mapper'
   s.add_dependency 'devise'
 end
